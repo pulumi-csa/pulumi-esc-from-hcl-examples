@@ -1,0 +1,3 @@
+name: hcl-esc-env-vars-pulumi
+runtime: hcl
+description: Create a Pulumi ESC environment and its variables using Pulumi HCL

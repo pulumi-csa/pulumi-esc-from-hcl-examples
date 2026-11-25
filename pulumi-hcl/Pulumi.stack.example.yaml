@@ -1,0 +1,24 @@
+# Example stack configuration for the Pulumi HCL version.
+#
+# To use it:
+#   1. Create a stack:           pulumi stack init <org>/<stack>
+#   2. Copy this file:           cp Pulumi.stack.example.yaml Pulumi.<stack>.yaml
+#   3. Fill in the values below.
+#   4. Set the secret:           pulumi config set --secret api_token <value>
+#
+# Pulumi.<stack>.yaml is excluded from version control by .gitignore.
+config:
+  # Required. The Pulumi Cloud organization that owns the ESC environment.
+  hcl-esc-env-vars-pulumi:organization: <org>
+
+  # Optional. Uncomment to override the defaults in variables.tf.
+  # hcl-esc-env-vars-pulumi:project: hcl-esc-example-pulumi
+  # hcl-esc-env-vars-pulumi:environment: dev
+  # hcl-esc-env-vars-pulumi:region: us-west-2
+
+  # Required, but do not write it here by hand. The value is encrypted with a
+  # key that belongs to your stack, so it has to be added by the CLI (step 4).
+  # The CLI writes an entry that looks like this:
+  #
+  # hcl-esc-env-vars-pulumi:api_token:
+  #   secure: AAABA...
