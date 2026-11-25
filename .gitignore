@@ -1,0 +1,7 @@
+# Terraform working directory and local variable files
+.terraform/
+*.tfvars
+
+# Pulumi stack configuration, created per user by `pulumi config set`
+Pulumi.*.yaml
+!Pulumi.stack.example.yaml
